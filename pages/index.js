@@ -27,7 +27,19 @@ export default class Counter extends React.Component {
   render () {
     return (
       <Provider store={this.store}>
-        <Clock />
+        <div>
+          <Clock/>
+          <dl className="foo">
+            <style jsx>{`
+              .foo {
+                font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+                color: red; 
+              }
+              `}
+            </style>
+            bar
+          </dl>
+        </div>
       </Provider>
     )
   }
